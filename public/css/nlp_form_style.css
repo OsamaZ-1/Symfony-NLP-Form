@@ -1,0 +1,65 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.title-form-div {
+    display: grid;
+    place-items: center;
+}
+
+/* Style the form container */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Header style */
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Text input style */
+#nlp_form_search {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#nlp_form_search:focus {
+    border-color: #0056b3;
+}
+
+/* Submit button style */
+#nlp_form_submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#nlp_form_submit:hover {
+    background-color: #004085;
+}

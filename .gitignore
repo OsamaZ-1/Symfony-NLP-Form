@@ -23,3 +23,11 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+# Ignore the entire Python directory, except necessary files
+python/*
+!python/python scripts/
+!python/environment.yml
+!python/*.config
+!python/*.json
+!python/*.yaml

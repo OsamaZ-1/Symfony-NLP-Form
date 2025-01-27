@@ -1,0 +1,71 @@
+/* General card styling */
+.property-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header with type and price */
+.property-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.property-card-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.property-card-header .property-price {
+    font-size: 1.2em;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Details section */
+.property-details p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.property-details strong {
+    color: #333;
+}
+
+/* Add a hover effect */
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease-in-out;
+}
+
+.nearby-label {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #eaf6ff;
+    color: #3498db;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.property-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}

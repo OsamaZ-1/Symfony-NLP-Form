@@ -1,0 +1,7 @@
+name: C:\Users\USER\Desktop\NLP Search Recommendation\python
+channels:
+  - defaults
+dependencies:
+  - python
+  - spacy
+prefix: C:\Users\USER\Desktop\NLP Search Recommendation\python

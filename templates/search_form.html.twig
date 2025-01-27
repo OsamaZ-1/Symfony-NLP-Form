@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Property Search</title>
+        <link rel="stylesheet" href="{{ asset('css/property_div_style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/nlp_form_style.css') }}">
+    </head>
+    <body>
+        <div class="title-form-div">
+            <h2>Find a new Home:</h2>
+
+            <form method="POST" action="{{ path('nlp_search') }}" class="form-container">
+                {{form_start(form)}}
+                <div class="form-group">
+                    {{ form_widget(form.search, { 'attr': {'placeholder': 'Search for Preferences'} }) }}
+                </div>
+                <div class="form-group">
+                    {{ form_widget(form.submit) }}
+                </div>
+                {{form_end(form)}}
+            </form>
+        </div>
+
+        <div class="property-container">
+            {% for property in properties %}
+                {% include 'property_div.html.twig' with { property: property } %}
+            {% endfor %}
+        </div>
+    </body>
+</html>

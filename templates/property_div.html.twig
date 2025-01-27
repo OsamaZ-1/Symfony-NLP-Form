@@ -1,0 +1,21 @@
+<div class="property-card">
+    <div class="property-card-header">
+        <h3>{{ property.type }}</h3>
+        <span class="property-price">${{ property.price|number_format }}</span>
+    </div>
+    <div class="property-details">
+        <table>
+            <tr>
+                <td><p><strong>Bedrooms:</p></td>
+                <td align='right'><p></strong> {{ property.bedrooms }}</p></td>
+            </tr>
+            <tr>
+                <td><p><strong>Location:</p></td>
+                <td align='right'><p></strong> {{ property.location }}</p></td>
+            </tr>
+        </table>
+        {% if property.nearby %}
+            <div class="nearby-label">Near By</div>
+        {% endif %}
+    </div>
+</div>
