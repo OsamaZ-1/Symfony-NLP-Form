@@ -52,4 +52,9 @@ conda env create -f python/environment.yml
 4. **Databse Setup**
     Copy the code from the **properties.sql**  file and run it on your MySQL DBMS or import it there to acquire the database.
 
+## Run the Server
+Run the following command from the project directory.
+```bash
+symfony server:start
+```
 
